@@ -1,0 +1,50 @@
+header{
+    color: white;
+    font-size: 15px;
+    background-color: rgb(5, 0,0,0.6);
+    border-style: solid;
+    border-right: .5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+}
+h2{
+    margin-top: 100px;
+}
+.artists{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.artist{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+.artist img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.artist .info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

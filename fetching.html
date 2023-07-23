@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    
+</body>
+<script>
+    fetch('https://artist.myanmarlocalartists.com/api/artists')
+    .then(response =>{
+        //check if the response was successful(status code in the range of )
+        if(response.ok){
+            //convert the response to Json format
+        return response.json();
+        }else{
+            throw new Error('Request failed');
+        }
+    })
+    .then(data =>{
+        //process the json data
+        console.log(data);
+    })
+    .catch(error =>{
+        //handle any errors that occurred during the request
+
+    });
+    console.log("fetch API");
+</script>
+</html>

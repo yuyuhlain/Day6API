@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+ </body>
+ <script> 
+ //parsing json  
+    const jsonString='[{"name":"yuyuhlaing","age":22,"email":"yuyuhlaing@gmail.com"},{"name":"kyaw kyaw","age":23,"email":"kaye@gmail.com"}]';
+    const data=JSON.parse(jsonString);
+    for(const student of data){
+        console.log(student.name);
+        console.log(student.age);
+        student.age=student.age+1;
+        console.log(student.email);
+    }
+    console.log(JSON.stringify(data));
+    //creating json
+    let cars=[
+    {
+        brand :"Toyota",
+        color :"red"
+    },
+    {
+        brand:"BMW",
+        color:"Blue"
+    }
+    ];
+    let car_json=JSON.stringify(cars);
+    console.log(car_json);
+
+</script>
+</html>
